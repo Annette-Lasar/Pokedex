@@ -1,0 +1,1 @@
+The background image originates from https://wallpaperaccess.com/pokemon-landscape. 
