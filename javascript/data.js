@@ -4,6 +4,7 @@ let newBatch = [];
 let currentPokemons = [];
 let currentSpeciesOfPokemons = [];
 let off = 0;
+let currentTab = 'about';
 const BATCH_LENGTH = 20;
 const DETAIL_TABS = ['about', 'base_stats', 'evolution', 'moves'];
 const METER_IN_FEET = 3.28084;

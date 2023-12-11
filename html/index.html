@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../javascript/data.js" defer></script>
     <script src="../javascript/templates.js" defer></script>
+    <script src="../javascript/auxiliary_functions.js" defer></script>
     <script src="../javascript/script.js" defer></script>
+    <script src="../javascript/pokemon_details.js" defer></script>
   </head>
   <body onload="init()">
-    <header>
+    <header class="background-radial-gradient">
       <div class="header">
         <svg viewBox="0 0 500 170">
           <path
@@ -42,7 +44,8 @@
             class="pokemon-in-logo"
             xlink:href="../img/pokemon.png"
             width="96"
-            x="215" y="70"
+            x="215"
+            y="70"
           />
         </svg>
         <div class="search-wrapper">
@@ -53,20 +56,40 @@
             <img src="../img/pokemon_horns.png" alt="" />
           </div>
           <form class="search-form" action="">
-            <input type="text" placeholder="Search for Pokémon" />
+            <input
+              id="search_input"
+              class="search-input"
+              type="text"
+              onkeyup="searchPokemon()"
+              placeholder="Search for Pokémon"
+            />
+            <button
+              onclick="clearSearchBox()"
+              class="clear-search-button"
+              type="reset"
+            >
+              <img src="../icons/x_icon.svg" />
+            </button>
           </form>
         </div>
       </div>
     </header>
     <div id="page">
-      <div id="pokemon_details_background" class="pokemon-details-background d-none"></div>
+      <div
+        id="pokemon_details_background"
+        class="pokemon-details-background d-none"
+      ></div>
       <main id="pokemon_gallery"></main>
-      <section id="more_button_section" class="more-button-section"></section>
+      <div id="loading_spinner" class="loading-spinner background-radial-gradient">
+        <div class="spinner"></div>
+      </div>
     </div>
-    <footer>
+    <footer class="background-radial-gradient">
+      <div id="more_button_section" class="more-pokemons-button-wrapper"></div>
       <div class="footer">
         <p>coded by Annette Lasar, November 2023</p>
       </div>
     </footer>
+    <div id="bottom"></div>
   </body>
 </html>
