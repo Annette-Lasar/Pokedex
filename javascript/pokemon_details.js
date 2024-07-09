@@ -257,7 +257,7 @@ document.addEventListener('click', function (event) {
       numColumns += 1;
       if (i < evolutionStages.length - 1) {
         columns.push(
-          '<td class="evolution-arrow"><img src="../icons/arrow_right_long.svg"></td>'
+          '<td class="evolution-arrow"><img src="./symbols/arrow_right_long.svg"></td>'
         );
         numColumns += 1;
       }

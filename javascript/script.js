@@ -12,7 +12,7 @@ get Pokemons from external server
 =================================================================== */
 
 function searchPokemon() {
-  let searchInput = getBoxId('search_input').value.toLowerCase();
+  let searchInput = getBoxId('search_input').value.trim().toLowerCase();
   let listedPokemons = getBoxId('pokemon_gallery');
   listedPokemons.innerHTML = '';
   for (let i = 0; i < currentPokemons.length; i++) {

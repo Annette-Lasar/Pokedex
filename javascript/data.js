@@ -53,23 +53,23 @@ const TYPE_COLORS_Text = {
 }
 
 const TYPE_SYMBOLS = {
-    bug: '../icons/types/type_bug_opaque.png', //Spinnennetz
-    dark: '../icons/types/type_dark_opaque.png', //Maske
-    dragon: '../icons/types/type_dragon_opaque.png', //Drache
-    electric: '../icons/types/type_electric_opaque.png',// Blitz
-    fairy: '../icons/types/type_fairy_opaque.png', //zauberstab
-    fighting: '../icons/types/type_fighting_opaque.png', // Hand
-    fire: '../icons/types/type_fire_opaque.png', // Feuer
-    flying: '../icons/types/type_flying_opaque.png', //Feder
-    ghost: '../icons/types/type_ghost_opaque.png', // Geist
-    grass: '../icons/types/type_grass_opaque.png', // Blatt
-    ground: '../icons/types/type_ground_opaque.png', // Spaten
-    ice: '../icons/types/type_ice_opaque.png', // Eiskristalle
-    normal: '../icons/types/type_normal_opaque.png', // Stern
-    poison: '../icons/types/type_poison_opaque.png', //Blasen
-    psychic: '../icons/types/type_psychic_opaque.png', // Auge
-    rock: '../icons/types/type_rock_opaque.png', //Berg
-    steel: '../icons/types/type_steel_opaque.png', //Stahlfeder
-    water: '../icons/types/type_water_opaque.png', //Tropfen
+    bug: './symbols/types/type_bug_opaque.png', //Spinnennetz
+    dark: './symbols/types/type_dark_opaque.png', //Maske
+    dragon: './symbols/types/type_dragon_opaque.png', //Drache
+    electric: './symbols/types/type_electric_opaque.png',// Blitz
+    fairy: './symbols/types/type_fairy_opaque.png', //zauberstab
+    fighting: './symbols/types/type_fighting_opaque.png', // Hand
+    fire: './symbols/types/type_fire_opaque.png', // Feuer
+    flying: './symbols/types/type_flying_opaque.png', //Feder
+    ghost: './symbols/types/type_ghost_opaque.png', // Geist
+    grass: './symbols/types/type_grass_opaque.png', // Blatt
+    ground: './symbols/types/type_ground_opaque.png', // Spaten
+    ice: './symbols/types/type_ice_opaque.png', // Eiskristalle
+    normal: './symbols/types/type_normal_opaque.png', // Stern
+    poison: './symbols/types/type_poison_opaque.png', //Blasen
+    psychic: './symbols/types/type_psychic_opaque.png', // Auge
+    rock: './symbols/types/type_rock_opaque.png', //Berg
+    steel: './symbols/types/type_steel_opaque.png', //Stahlfeder
+    water: './symbols/types/type_water_opaque.png', //Tropfen
 }
 

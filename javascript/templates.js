@@ -3,7 +3,7 @@ function generatePokemonGalleryHTML(i, currentPokemon) {
          <div id="pokemon_card_${i}" class="pokemon-card" onclick="turnCard(${i})" onmouseover="moveImageToCenter(${i})" onmouseout="moveImageToSide(${i})">
           <div id="pokemon_content_wrapper_frontface_${i}" class="pokemon-content-wrapper-frontface">       
               <div class="pokemon-image-container">
-                <img id="current_pokemon_symbol_${i}" class="current-pokemon-symbol" src="../icons/types/type_normal_opaque.png" alt=""></img>
+                <img id="current_pokemon_symbol_${i}" class="current-pokemon-symbol" src="../symbols/types/type_normal_opaque.png" alt=""></img>
                 <img id="current_pokemon_image_${i}" class="current-pokemon-image" src="${
     currentPokemon['sprites']['other']['official-artwork']['front_default']
   }" alt="">
@@ -28,7 +28,7 @@ function generatePokemonGalleryHTML(i, currentPokemon) {
 function generateMorePokemonsAndToTopButtonHTML() {
   return /* html */ `
         <button id="back_to_top_button" class="back-to-top-button">
-          <a href="#top"><img src="../icons/arrow_up.svg" alt=""></a>
+          <a href="#top"><img src="./symbols/arrow_up.svg" alt=""></a>
         </button>
         <button id="more_pokemons_button" 
             onclick="setNewOffForMorePokemons()" 
@@ -36,7 +36,7 @@ function generateMorePokemonsAndToTopButtonHTML() {
             More Pokemons
         </button>
         <button id="to_bottom_button" onclick="scrollLastCardIntoView()" class="to-bottom-button">
-          <div class="bottom-button-img-wrapper"><img src="../icons/arrow_up.svg" alt=""></div>
+          <div class="bottom-button-img-wrapper"><img src="./symbols/arrow_up.svg" alt=""></div>
         </button>
     `;
 }
@@ -54,11 +54,11 @@ function generateDetailCardBoxHTML(i, currentPokemon) {
       <div id="pokemon_detail_card${i}" class="pokemon-detail-card">
         <div class="detail-card-icon-wrapper">
         <div class="arrow-wrapper">
-          <img src="../icons/arrow-left.svg" onclick="showPreviousCard(${i})">
-          <img src="../icons/arrow-right.svg" onclick="showNextCard(${i})">
+          <img src="./symbols/arrow-left.svg" onclick="showPreviousCard(${i})">
+          <img src="./symbols/arrow-right.svg" onclick="showNextCard(${i})">
         </div>
         <div class="x-close" onclick="closeDetailView()">
-          <img src="../icons/x-close.svg" alt="">
+          <img src="./symbols/x-close.svg" alt="">
         </div>
         </div>
         <div class="detail-name-wrapper">
