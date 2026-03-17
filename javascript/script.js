@@ -60,6 +60,7 @@ async function createPokemonObjects() {
     const POKEMON_URL = BATCH.url;
     await createAndSavePokemonObject(POKEMON_URL);
   }
+  console.log('current Pokemons: ', currentPokemons);
   renderPokemons();
 }
 
